@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Water Level Automation Using Mobile IoT</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f7fb;
+color:#222;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:#0b5ed7;
+color:white;
+padding:40px 20px;
+position:relative;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:38px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+/* LIVE DEMO BUTTON */
+
+.demo-btn{
+
+position:absolute;
+top:25px;
+right:30px;
+background:#22c55e;
+color:white;
+padding:12px 18px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+font-size:15px;
+transition:0.3s;
+
+}
+
+.demo-btn:hover{
+background:#16a34a;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:30px 20px;
+}
+
+.section{
+margin-bottom:40px;
+}
+
+.section h2{
+background:#0b5ed7;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+font-size:22px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+ul{
+padding-left:20px;
+}
+
+.project-image{
+text-align:center;
+margin-top:30px;
+}
+
+.project-image img{
+max-width:100%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+.footer{
+background:#0b5ed7;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:28px;
+}
+
+.demo-btn{
+position:static;
+display:inline-block;
+margin-top:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a class="demo-btn" href="https://gauravc5.github.io/water-level-iot/" target="_blank">
+Live Demo
+</a>
+
+<h1>Water Level Automation Using Mobile IoT</h1>
+
+<p>
+NodeMCU ESP8266 • Ultrasonic Sensor • Blynk IoT • SIM800L • OLED Display
+</p>
+
+<p>
+College: <b>Govt I.T.I. Solapur</b> |
+Trade: COPA |
+Project Guide: V. D. Bhange & A. T. Maskare
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="project-image">
+
+
+</div>
+
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<div class="card">
+
+<p>
+
+In today’s digital era, automation plays an important role in saving time,
+water and electricity. Many homes and institutions face problems like
+water tank overflow or running the motor when the tank is empty.
+
+This project <b>“Water Level Automation Using Mobile IoT”</b>
+automatically controls the water pump based on the water level in the tank.
+
+Using an ultrasonic sensor and IoT technology, the system monitors the
+water level and automatically turns the motor ON when the water level is low
+and OFF when the tank becomes full.
+
+Users can also monitor the tank level and control the motor remotely
+using a mobile application from anywhere in the world.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="grid">
+
+<div class="section">
+
+<h2>2. Objectives</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Automate the water tank filling process</li>
+<li>Prevent water overflow and wastage</li>
+<li>Reduce manual effort of switching motor ON/OFF</li>
+<li>Allow remote monitoring through mobile application</li>
+<li>Provide real-time alerts and notifications</li>
+<li>Improve efficient water management using IoT</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Need of Project</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Water tanks often overflow due to human negligence</li>
+<li>Manual monitoring of tank level is inconvenient</li>
+<li>Electricity is wasted if motor runs unnecessarily</li>
+<li>Smart monitoring is needed in homes and institutions</li>
+<li>IoT enables remote monitoring and automation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="grid">
+
+<div class="section">
+
+<h2>4. Technologies Used</h2>
+
+<div class="card">
+
+<ul>
+
+<li><b>Microcontroller:</b> NodeMCU ESP8266</li>
+<li><b>Sensor:</b> Ultrasonic Sensor</li>
+<li><b>Communication:</b> WiFi / SIM800L GSM</li>
+<li><b>Display:</b> 0.96" OLED Display</li>
+<li><b>Mobile Platform:</b> Blynk IoT App</li>
+<li><b>Programming:</b> Arduino IDE</li>
+<li><b>Cloud Platform:</b> Blynk Cloud</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Working Principle</h2>
+
+<div class="card">
+
+<ul>
+
+<li>The ultrasonic sensor continuously measures water level.</li>
+<li>NodeMCU processes the sensor data.</li>
+<li>When water level becomes LOW, the motor automatically turns ON.</li>
+<li>When the tank becomes FULL, the motor automatically turns OFF.</li>
+<li>Water level data is sent to the Blynk mobile app via WiFi or GSM.</li>
+<li>Users can monitor tank level and control motor remotely.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="grid">
+
+<div class="section">
+
+<h2>6. Advantages</h2>
+
+<div class="card">
+
+<ul>
+
+<li>24×7 automatic water monitoring</li>
+<li>Prevents water overflow and wastage</li>
+<li>Saves electricity and water</li>
+<li>Remote motor control from anywhere</li>
+<li>Real-time notifications</li>
+<li>Reduces human effort</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Conclusion</h2>
+
+<div class="card">
+
+<p>
+
+The <b>Water Level Automation Using Mobile IoT</b> system provides
+a smart and efficient solution for water management.
+
+By using sensors, NodeMCU microcontroller, IoT cloud and mobile connectivity,
+the system automatically controls the water pump and allows users
+to monitor the tank remotely.
+
+This project helps in saving water, electricity and time,
+making it a useful solution for homes, industries and institutions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+IoT Project • NodeMCU ESP8266 • Ultrasonic Sensor • Blynk IoT
+
+</div>
+
+</body>
+</html>
+```
